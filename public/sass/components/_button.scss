@@ -1,0 +1,17 @@
+.button {
+  background-color: $secondary-color;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  font-size: 1.2rem;
+  color: #ffff;
+  letter-spacing: 0.4rem;
+  font-family: $font-light;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    transition: 0.5s;
+  }
+}

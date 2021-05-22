@@ -1,0 +1,25 @@
+@import 'utilities/variable';
+@import 'base/typography';
+@import 'base/reset';
+
+@import 'layouts/navigation';
+
+@import 'components/content-header';
+@import 'components/header-content';
+@import 'components/button';
+@import 'components/cardpics';
+
+@import 'pages/homepage';
+@import 'pages/imnew';
+@import 'pages/events';
+@import 'pages/contact';
+@import 'pages/live';
+@import 'pages/aboutus';
+@import 'pages/login';
+
+@import 'layouts/adminnav';
+@import 'pages/admin';
+@import 'pages/members';
+@import 'pages/addnew';
+
+@import 'layouts/footer';

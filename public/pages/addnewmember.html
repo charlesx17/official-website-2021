@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" href="../images/titlelogo.png" type="image/icon type" />
+    <title>Add new</title>
+  </head>
+  <body>
+    <header class="add_header">
+      <nav class="admin_nav">
+        <div class="admin_nav-list">
+          <div class="list-item">
+            <img src="../images/titlelogo.png" alt="" />
+            <ul class="nav_list-item">
+              <li class=""><a href="#">Dashboard</a></li>
+              <li class=""><a href="#">Members</a></li>
+              <li class=""><a href="#">Edits</a></li>
+              <li class=""><a href="#">Contribution</a></li>
+              <li class=""><a href="#">Departments</a></li>
+              <li class=""><a href="#">Pledges</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="add-content">
+        <div class="form-body">
+          <form action="">
+            <div class="">
+              <label for="firstname">firstname</label>
+              <input type="text" name="firstname" />
+            </div>
+            <div class="">
+              <label for="lastname">lastname</label>
+              <input type="text" name="lastname" />
+            </div>
+            <div class="">
+              <label for="address">address</label>
+              <input type="text" name="address" />
+            </div>
+            <div class="">
+              <label for="contact">Contact number</label>
+              <input type="number" name="contact" />
+            </div>
+            <div class="">
+              <label for="baptisedate">Baptise Date</label>
+              <input type="date" name="baptisedate" />
+            </div>
+
+            <div class="gender">
+              <label for="gender">Gender</label>
+              <select name="gender" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="">
+              <label for="deparments">Departments</label>
+              <select name="deparments" id="">
+                <option value="" selected disabled>Select Option</option>
+                <option value="youth">Youth Department</option>
+                <option value="mens">Men's Department</option>
+                <option value="ladies">Ladies Department</option>
+              </select>
+            </div>
+            <input type="submit" value="add member" class="button" />
+          </form>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+.nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &_logo img {
+    width: 25rem;
+    margin-left: 3rem;
+  }
+
+  i {
+    font-size: 3rem;
+    color: $secondary-color;
+    cursor: pointer;
+  }
+
+  .openMenu {
+    display: none;
+  }
+
+  .closeMenu {
+    display: none;
+    i {
+      color: #ffffff;
+    }
+  }
+
+  &_list {
+    &-item {
+      list-style: none;
+      display: flex;
+      font-size: 1.6rem;
+      font-family: $font-light;
+      font-weight: 700;
+      letter-spacing: 0.1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin-right: 3rem;
+
+        a {
+          text-decoration: none;
+          color: #000000;
+
+          &:hover {
+            color: $primary-color;
+            border-bottom: 0.1rem solid $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $highresDesktop) {
+  .nav {
+    padding: 8rem;
+
+    &_logo img {
+      width: 40rem;
+    }
+
+    &_list {
+      &-item {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .nav {
+    padding: 5rem;
+
+    &_logo img {
+      width: 25rem;
+    }
+
+    &_list {
+      &-item {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-landscape) {
+  .nav {
+    padding: 4rem;
+
+    &_logo img {
+      width: 25rem;
+    }
+
+    &_list {
+      &-item {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-portrait) {
+  .nav {
+    padding: 3rem;
+
+    &_logo img {
+      width: 20rem;
+    }
+
+    .openMenu {
+      display: block;
+    }
+
+    .closeMenu {
+      display: block;
+      position: absolute;
+      top: 5rem;
+      right: 0.5rem;
+    }
+
+    &_list {
+      &-item {
+        font-size: 3rem;
+        position: fixed;
+        display: flex;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        flex-direction: column;
+        height: 100%;
+        background-color: $secondary-color;
+        align-items: center;
+        justify-content: center;
+        transition: top 1s ease;
+
+        display: none;
+
+        li {
+          margin-bottom: 2rem;
+
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

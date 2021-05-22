@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/titlelogo.png" type="image/icon type" />
+
+    <title>CTW</title>
+  </head>
+  <body>
+    <!-- Header Page -->
+    <header class="home-header">
+      <%- include('./partials/navigation.ejs')%>
+
+      <!-- MAIN CONTENT -->
+      <div class="main">
+        <div class="main_content">
+          <p>
+            A christian community <br />
+            founded in <span>truth</span>, grounded in <span>faith</span>,
+            <br />
+            rooted in love and called to <span>service</span>, <br />
+            for the glory of
+            <span>jesus christ</span>.
+          </p>
+          <div class="main_content-buttons">
+            <a href="/live" class="button">Watch Live</a>
+            <a href="/welcome" class="button">I'm new here</a>
+          </div>
+        </div>
+      </div>
+      <img src="/images/smoke.png" alt="" class="content_header-smoke" />
+    </header>
+    <!-- TIME CONTENT -->
+    <section class="main_time">
+      <div class="time">
+        <h2>service time</h2>
+        <h3><span>Sundays</span> at 10:00am</h3>
+        <p>
+          Join us in-person here at UPC Church Christian Tabernacle of Worship
+          located at Brgy Nonoy, Valeria Extension, Iloilo City Proper, Iloilo
+          City.
+        </p>
+        <p>
+          Our services are also streamed online on
+          <a href="https://www.facebook.com/upciloiloctw" target="_blank"
+            >FACEBOOK</a
+          >
+          and our WEBSITE
+        </p>
+      </div>
+    </section>
+    <!-- LECTURES CONTENT -->
+    <section class="main_lectures">
+      <div class="main_lectures-title">
+        <span> Latest Sermons </span>
+      </div>
+      <div class="main_lectures-cards">
+        <div class="card">
+          <div id="fb-root"></div>
+          <div
+            class="fb-video"
+            data-href="https://www.facebook.com/upciloiloctw/videos/195564858760650/"
+            data-allowfullscreen="true"
+            data-width="500"
+          ></div>
+          <div class="card_details">
+            <!-- <span class="card_details-title">sample title </span> -->
+            <span class="card_details-date">april 9 2020</span>
+            <p class="card_details-preacher">
+              Preacher: <span>Pastor. Carlos Villar</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div id="fb-root"></div>
+          <div
+            class="fb-video"
+            data-href="https://www.facebook.com/upciloiloctw/videos/195564858760650/"
+            data-allowfullscreen="true"
+            data-width="500"
+          ></div>
+          <div class="card_details">
+            <!-- <span class="card_details-title">sample title </span> -->
+            <span class="card_details-date">april 9 2020</span>
+            <p class="card_details-preacher">
+              Preacher: <span>Pastor. Carlos Villar</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div id="fb-root"></div>
+          <div
+            class="fb-video"
+            data-href="https://www.facebook.com/upciloiloctw/videos/312662520301390"
+            data-allowfullscreen="true"
+            data-width="500"
+          ></div>
+          <div class="card_details">
+            <!-- <span class="card_details-title">sample title </span> -->
+            <span class="card_details-date">april 9 2020</span>
+            <p class="card_details-preacher">
+              Preacher: <span>Pastor. Carlos Villar</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- LOCATION CONTENT -->
+    <section class="main_map">
+      <div class="main_map-details">
+        <div class="details-title">
+          <span>Visit us</span>
+        </div>
+        <div class="details-info">
+          <div class="details-info-name">
+            <span>united pentecostal church</span>
+            <h3>Christian Tabernacle of Worship</h3>
+          </div>
+          <div class="details-info-times">
+            <h4><span>8:00am - 8:30am</span> Devotion</h4>
+            <h4><span>8:30am - 9:30am</span> Divided Session Sunday School</h4>
+            <h4><span>10am - 12pm</span> Devine Service</h4>
+            <br />
+
+            <h4>
+              Brgy Nonoy, Valeria Extension, Iloilo City Proper, Iloilo City.
+            </h4>
+
+            <span>0919 405 6460</span>
+          </div>
+          <a
+            href="https://goo.gl/maps/2Qr7tBqvx3PgHHMX6"
+            target="_blank"
+            class="button"
+            >Get Location</a
+          >
+        </div>
+      </div>
+      <div class="main_map-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7841.073221047551!2d122.56812800000002!3d10.693031!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd1f123c0e45608d!2sChristian%20Tabernacle%20of%20Worship%20(U.P.C.)!5e0!3m2!1sen!2sph!4v1618358928374!5m2!1sen!2sph"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+    <footer class="main_footer">
+      <div class="main_footer-logo">
+        <span>united pentecostal church</span>
+        <h3>christian tabernacle of worship</h3>
+      </div>
+      <div class="main_footer-verse">
+        <span
+          >“Trust in the LORD with all your heart, and do not lean on your own
+          understanding. In all your ways acknowledge him, and he will make
+          straight your paths.”</span
+        ><br />
+        <span><i>Proverbs 3:5-6: </i></span>
+        <div class="social-details">
+          <div class="social">
+            <i class="fab fa-facebook-square icons"></i>
+            <a href="https://www.facebook.com/upciloiloctw"
+              >facebook.com/upciloiloctw</a
+            >
+          </div>
+          <div class="social phone">
+            <i class="fas fa-phone-square-alt icons"></i>
+            <span>0919 405 6460</span>
+          </div>
+          <div class="social">
+            <i class="fas fa-envelope icons"></i>
+            <a>christiantabernacle@gmail.com</a>
+          </div>
+          <div class="social social-map">
+            <i class="fas fa-map-marked-alt icons"></i>
+            <a href="https://goo.gl/maps/2Qr7tBqvx3PgHHMX6" target="_blank"
+              >Brgy Nonoy, Valeria Extension, Iloilo City Proper, Iloilo
+              City.</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      async
+      defer
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a5afd461bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

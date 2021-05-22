@@ -1,0 +1,61 @@
+.event_content {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 4rem;
+
+    width: 100rem;
+
+    .card_cover {
+      max-width: 25rem;
+      height: auto;
+      margin-right: 2rem;
+    }
+
+    .card_descriptions {
+      &-title {
+        font-size: 3rem;
+        max-width: 70rem;
+        font-family: $font-heading;
+        letter-spacing: 0.2rem;
+        margin-bottom: 1rem;
+        color: $secondary-color;
+        font-weight: 700;
+      }
+
+      &-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        span {
+          font-family: $font-light;
+          font-weight: 300;
+          font-size: 1.8rem;
+          text-transform: capitalize;
+          margin-bottom: 1rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+
+      &-message {
+        margin-top: 1rem;
+        p {
+          font-size: 1.8rem;
+          max-width: 70rem;
+
+          font-family: $font-light;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
