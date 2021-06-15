@@ -1,0 +1,11 @@
+.content_header {
+  min-height: 100vh;
+  position: relative;
+
+  &-smoke {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -2;
+  }
+}

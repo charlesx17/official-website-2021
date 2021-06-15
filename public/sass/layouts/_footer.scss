@@ -1,0 +1,77 @@
+.main_footer {
+  background-color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  &-logo {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    flex-shrink: 0;
+
+    span {
+      font-family: $font-heading;
+      letter-spacing: 0.5rem;
+      color: #ffffff;
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      font-size: 5rem;
+      color: $secondary-color;
+      font-family: $font-cursive;
+      text-transform: capitalize;
+      letter-spacing: 0.2rem;
+      font-weight: 300;
+    }
+  }
+
+  &-verse {
+    width: 30rem;
+    padding: 2rem;
+
+    span {
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-family: $font-light;
+      letter-spacing: 0.2rem;
+      font-weight: 300;
+    }
+
+    i {
+      color: $secondary-color;
+      font-size: 1.5rem;
+    }
+
+    .social-details {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: #ffffff;
+        font-family: $font-light;
+        font-size: 1.2rem;
+        text-decoration: none;
+        margin-left: 0.5rem;
+      }
+
+      .social {
+        display: flex;
+        align-items: center;
+
+        min-width: 20rem;
+        padding: 1rem;
+
+        .icons {
+          width: 2rem;
+          font-size: 3rem;
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}

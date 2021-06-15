@@ -1,0 +1,43 @@
+.wrapper-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  .formbody {
+    background-color: #fff;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+    .formlogo {
+      width: 30rem;
+      margin-bottom: 2.5rem;
+    }
+
+    form {
+      label {
+        display: block;
+        font-family: $font-light;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 1.3rem;
+        border: none;
+        background-color: #f5f5f5;
+        outline-color: $secondary-color;
+        border-radius: 1rem;
+      }
+
+      input[type='submit'] {
+        background-color: $secondary-color;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

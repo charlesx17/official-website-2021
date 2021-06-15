@@ -1,0 +1,95 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  .boxes {
+    width: 100rem;
+  }
+
+  .box {
+    background-color: #ffffff;
+    padding: 5rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    font-size: 2rem;
+    font-family: $font-light;
+    color: $secondary-color;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+
+    i {
+      margin-right: 1rem;
+      color: $secondary-color;
+    }
+  }
+
+  .box_profile {
+    position: relative;
+    &-name {
+      font-size: 4rem;
+      font-family: $font-heading;
+      letter-spacing: 0.5rem;
+      font-weight: 700;
+    }
+
+    &-infos {
+      margin-top: 2rem;
+
+      .infos {
+        padding: 1rem;
+      }
+    }
+
+    .edit {
+      position: absolute;
+      top: 2rem;
+      right: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .amount-overview {
+    margin-top: 2rem;
+
+    hr {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      font-family: $font-light;
+      font-size: 1.5rem;
+      color: #000;
+    }
+  }
+
+  .box_profile-givings {
+    .amount-details {
+      margin-top: 2rem;
+      .tabs {
+        width: 100%;
+      }
+      tr {
+        th {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: $secondary-color 1px solid;
+          padding: 1.5rem;
+        }
+
+        td {
+          display: flex;
+          justify-content: space-between;
+          padding: 1.5rem;
+          color: #000000;
+        }
+      }
+    }
+  }
+}

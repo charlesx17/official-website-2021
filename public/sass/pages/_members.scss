@@ -1,0 +1,170 @@
+.members_header {
+  min-height: 100vh;
+
+  .member_content {
+    display: flex;
+    padding: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &-filter {
+      padding: 5rem;
+      span {
+        font-size: 1.8rem;
+        font-family: $font-light;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 2rem;
+        letter-spacing: 0.1rem;
+      }
+
+      input {
+        padding: 1rem;
+        outline-color: $secondary-color;
+        border: none;
+        background-color: #f5f5f5;
+        border-radius: 0.5rem;
+      }
+    }
+
+    &-name {
+      flex-grow: 1;
+      padding: 5rem;
+
+      .name-top {
+        margin-bottom: 5rem;
+        span {
+          font-size: 1.8rem;
+          font-family: $font-light;
+          font-weight: 700;
+          letter-spacing: 0.1rem;
+          margin-right: 5rem;
+        }
+
+        a {
+          display: inline-block;
+        }
+      }
+
+      .name-list {
+        .members-list {
+          width: 100%;
+          tbody {
+            tr {
+              td {
+                display: flex;
+                justify-content: space-between;
+                padding: 2rem;
+                border-bottom: solid 1px $secondary-color;
+                .member-name {
+                  font-size: 2rem;
+                  font-family: $font-light;
+                  font-weight: 700;
+                  letter-spacing: 0.1rem;
+
+                  a {
+                    color: #000;
+                    text-decoration: none;
+                    text-transform: capitalize;
+
+                    &:hover {
+                      border-bottom: solid 1px $secondary-color;
+                      transition: 0.2s;
+                    }
+                  }
+                }
+
+                .delete-icon {
+                  img {
+                    width: 3rem;
+                    cursor: pointer;
+
+                    &:hover {
+                      transform: translateY(-0.2rem);
+                      transition: 0.2s;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal-form {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+
+    &-content {
+      width: 60rem;
+      min-height: 40rem;
+      background-color: #ffffff;
+      border-radius: 1rem;
+      position: relative;
+      padding: 5rem;
+
+      .close {
+        font-size: 2.5rem;
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+        cursor: pointer;
+      }
+
+      span {
+        font-size: 3rem;
+        font-family: $font-light;
+        letter-spacing: 0.2rem;
+        font-weight: 300;
+      }
+
+      .form-group {
+        label {
+          font-size: 1.8rem;
+          display: block;
+          margin-bottom: 0.5rem;
+          margin-top: 1.5rem;
+          font-family: $font-light;
+          letter-spacing: 0.2rem;
+        }
+
+        input {
+          padding: 1rem;
+          width: 80%;
+          border-radius: 0.4rem;
+          border: none;
+          background-color: #f5f5f5;
+
+          &:focus {
+            outline-color: $secondary-color;
+          }
+        }
+      }
+
+      select {
+        padding: 0.3rem;
+        font-size: 1.8rem;
+
+        &:focus {
+          outline-color: $secondary-color;
+        }
+      }
+
+      .button {
+        border: none;
+        padding: 1rem 4rem;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

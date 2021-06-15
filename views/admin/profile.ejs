@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/images/titlelogo.png" type="image/icon type" />
+    <link href="http://fonts.cdnfonts.com/css/better-grade" rel="stylesheet" />
+
+    <title>Profile</title>
+  </head>
+  <body>
+    <header><%- include('../partials/adminNav.ejs')%></header>
+    <main class="main">
+      <div class="boxes">
+        <div class="box box_profile">
+          <i class="far fa-edit edit"></i>
+          <span class="box_profile-name"
+            ><%= member.firstname%> <%= member.lastname%></span
+          >
+          <div class="box_profile-infos">
+            <div class="infos">
+              <i class="fas fa-venus-mars"></i>
+              <span><%= member.gender%></span>
+            </div>
+
+            <div class="infos">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>add address</span>
+            </div>
+
+            <div class="infos">
+              <i class="fas fa-phone-alt"></i>
+              <span>add contact</span>
+            </div>
+
+            <div class="infos">
+              <i class="fas fa-id-card"></i>
+              <span><%= member.department%> department</span>
+            </div>
+            <div class="infos">
+              <i class="far fa-calendar-alt"></i>
+              <span><%= member.baptizedDate.toLocaleDateString()%></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box box_profile-givings">
+          <div class="givings">
+            <i class="fas fa-hand-holding-usd"></i>
+            <span>Givings</span>
+
+            <div class="amount-overview">
+              <h4>Total Overview</h4>
+              <hr>
+             <div class="">
+              <h4>Total Contribution: </h4>
+              <span>2</span>
+             </div>
+              <hr>
+            <div class="">
+              <h4>Total Amount: </h4>
+              <span>&#8369 1800</span>
+            </div>
+            </div>
+          
+
+            <div class="amount-details">
+              <table class="tabs">
+                <tbody>
+
+                  <tr>
+                    <th>
+                      <div class="">
+                        <i class="fas fa-money-check-alt"></i>
+                        <span>Amount</span>
+                      </div>
+  
+                      <div class="">
+                        <i class="fas fa-calendar-week"></i>
+                        <span>Date</span>
+                      </div>
+                    </th>
+                  </tr>
+
+
+                  <tr>
+                    <td>
+                      <div class="give-amount">
+                        <span>&#8369 800</span>
+                      </div>
+                      <div class="give-date">
+                        <span>09/21/21</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="give-amount">
+                        <span>&#8369 1000</span>
+                      </div>
+                      <div class="give-date">
+                        <span>03/21/21</span>
+                      </div>
+                    </td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="box box_profile-pledges">
+          <div class="pledges">
+            <i class="far fa-handshake"></i>
+            <span>Pledges</span>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <img src="/images/smoke.png" alt="" class="content_header-smoke" />
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/a5afd461bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

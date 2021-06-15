@@ -1,0 +1,29 @@
+.header-content {
+  text-align: center;
+  padding: 5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 15rem;
+    font-family: $font-cursive;
+    color: $secondary-color;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-family: $font-heading;
+    font-weight: 300;
+    color: #000000;
+    letter-spacing: 0.4rem;
+  }
+
+  a {
+    align-self: center;
+    margin-top: 2.5rem;
+  }
+}
