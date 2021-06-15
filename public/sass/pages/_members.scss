@@ -75,13 +75,18 @@
                 }
 
                 .delete-icon {
-                  img {
-                    width: 3rem;
-                    cursor: pointer;
+                  button {
+                    border: none;
+                    background-color: transparent;
+                    i {
+                      font-size: 2.5rem;
+                      cursor: pointer;
+                      color: $secondary-color;
 
-                    &:hover {
-                      transform: translateY(-0.2rem);
-                      transition: 0.2s;
+                      &:hover {
+                        transform: translateY(-0.2rem);
+                        transition: 0.2s;
+                      }
                     }
                   }
                 }

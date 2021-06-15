@@ -1438,12 +1438,18 @@ html {
   transition: 0.2s;
 }
 
-.members_header .member_content-name .name-list .members-list tbody tr td .delete-icon img {
-  width: 3rem;
-  cursor: pointer;
+.members_header .member_content-name .name-list .members-list tbody tr td .delete-icon button {
+  border: none;
+  background-color: transparent;
 }
 
-.members_header .member_content-name .name-list .members-list tbody tr td .delete-icon img:hover {
+.members_header .member_content-name .name-list .members-list tbody tr td .delete-icon button i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #c7934e;
+}
+
+.members_header .member_content-name .name-list .members-list tbody tr td .delete-icon button i:hover {
   -webkit-transform: translateY(-0.2rem);
           transform: translateY(-0.2rem);
   -webkit-transition: 0.2s;

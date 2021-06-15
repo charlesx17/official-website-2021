@@ -1,22 +1,30 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const Member = require("../models/member");
+const Member = require('../models/member');
 
-router.get("/", (req, res) => {
-  res.send("admin");
+router.get('/', (req, res) => {
+  res.send('admin');
 });
 
-router.get("/members", async (req, res) => {
-  const members = await Member.find();
-  res.render("admin/members", { members: members });
+router.get('/members', async (req, res) => {
+  try {
+    const members = await Member.find().sort({ addedAt: 'desc' });
+    res.render('admin/members', { members: members });
+  } catch (e) {
+    console.log(e);
+  }
 });
 
-router.get("/members/:id", async (req, res) => {
-  const member = await Member.findById(req.params.id);
-  res.render("admin/profile", { member: member });
+router.get('/members/:id', async (req, res) => {
+  try {
+    const member = await Member.findById(req.params.id);
+    res.render('admin/profile', { member: member });
+  } catch (e) {
+    console.log(e);
+  }
 });
 
-router.post("/members", async (req, res) => {
+router.post('/members', async (req, res) => {
   try {
     const date = new Date(req.body.dateBaptized).toLocaleDateString();
 
@@ -30,7 +38,17 @@ router.post("/members", async (req, res) => {
 
     await newMember.save();
 
-    res.redirect("members");
+    res.redirect('members');
+  } catch (e) {
+    console.log(e);
+  }
+});
+
+router.delete('/members/:id', async (req, res) => {
+  try {
+    await Member.findByIdAndDelete(req.params.id);
+
+    res.redirect('/admin/members');
   } catch (e) {
     console.log(e);
   }

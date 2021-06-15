@@ -56,9 +56,15 @@
                         ><%= member.firstname %> <%= member.lastname %></a
                       >
                     </div>
-                    <div class="delete-icon">
-                      <img src="../images/delete.png" alt="" />
-                    </div>
+                    <form
+                      action="members/<%= member.id %>?_method=DELETE"
+                      method="POST"
+                      class="delete-icon"
+                    >
+                      <button type="submit">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </form>
                   </td>
                 </tr>
                 <% }) %>

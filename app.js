@@ -8,13 +8,16 @@ const pageRouter = require('./routes/pagesRoutes');
 const membersRouter = require('./routes/membersRoute');
 // const { connect } = require('./routes/pagesRoutes');
 
-dotenv.config({ path: './config.env' });
+const methodOverride = require('method-override');
 
+dotenv.config({ path: './config.env' });
 
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
+
+app.use(methodOverride('_method'));
 
 app.use(express.static(`${__dirname}/public`));
 
@@ -36,10 +39,9 @@ mongoose
     console.log(err);
   });
 
-const port =  process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
-
 
 app.use('/', pageRouter);
 app.use('/admin', membersRouter);
